@@ -1,5 +1,4 @@
-define(["JQuery", "cookie", "Common", 'layer', 'ELEMENT'],function($, cookie, common, layer, ELEMENT) {
-  return (function ($) {
+
     $(function() {
         $('#easypiechart-teal').easyPieChart({
             scaleColor: false,
@@ -30,6 +29,3 @@ define(["JQuery", "cookie", "Common", 'layer', 'ELEMENT'],function($, cookie, co
 
     $('#calendar').datepicker({
     	});
-  })(jQuery)
-
-});

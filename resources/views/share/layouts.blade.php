@@ -45,8 +45,10 @@
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 <script type="text/javascript">
   require.config({
+    baseUrl: "{{ getenv('ASSETS_JS_ROOT') }}",
     paths: {
-      JQuery: "https://code.jquery.com/jquery-3.3.1.min",
+      jQuery: "/assets/js/jquery3.3.1",
+      jquery: "/assets/js/jquery3.3.1",
       jquerym: "/assets/js/jquery.metisMenu",
       easypiechart: "/assets/js/easypiechart",
       morris: "/assets/js/morris/morris",
@@ -55,22 +57,21 @@
       bootstrap: "http://www.jq22.com/jquery/bootstrap-3.3.4",
       vue: "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue",
       raphael: "/assets/js/morris/raphael-2.1.0.min"
-      // 'jquery-3.3.1': "https://code.jquery.com/jquery-3.3.1.min",
     },
     "shim": {
-      easypiechart: ['JQuery'],
-      jquerym: ['JQuery'],
-      bootstrap: ['JQuery'],
-      morris: ['JQuery'],
-      'easypiechart-data': ['JQuery', 'easypiechart'],
-      'custom-scripts': ['JQuery', 'morris'],
-      raphael: ['morris', 'JQuery']
+      easypiechart: ['jQuery'],
+      jquerym: ['jQuery'],
+      bootstrap: ['jQuery'],
+      morris: ['jQuery'],
+      'easypiechart-data': ['jQuery', 'easypiechart'],
+      'custom-scripts': ['jQuery', 'morris'],
+      raphael: ['morris', 'jQuery']
     }
   });
-  require(['JQuery', 'easypiechart-data', 'morris', 'custom-scripts', 'easypiechart', 'bootstrap', 'jquerym', 'vue', 'raphael'], function ($, easypiechartd, morris, custom, easypiechart, bootstrap, jquerym, vue, raphael) { 
-    console.log(bootstrap);
-    console.log(vue);
-    console.log(raphael);
-        //到这一步传不进来值
+  require(['jQuery', 'easypiechart-data', 'morris', 'custom-scripts', 'easypiechart', 'bootstrap', 'jquerym', 'vue', 'raphael'], function ($, easypiechartd, morris, custom, easypiechart, bootstrap, jquerym, vue, raphael) { 
+    (function ($) {
+      console.log(vue);
+      console.log($('#test').html());
+    })(jQuery);
   })
 </script>
