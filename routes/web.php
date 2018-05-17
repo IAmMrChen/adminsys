@@ -34,4 +34,5 @@ Route::get('/testvue', 'TestController@testVue');
 // 新的管理系统项目路由
 Route::group([], function () {
 	Route::get('/index', 'index\IndexController@index');
+	Route::get('/testcomponent', 'index\IndexController@testComponent');
 });

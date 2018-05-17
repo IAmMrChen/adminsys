@@ -52,6 +52,9 @@
         <li>
           <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
         </li>
+        <li>
+          <a href="/testcomponent"><i class="fa fa-fw fa-file"></i>功能开发页面</a>
+        </li>
       </ul>
     </div>
 </nav>
