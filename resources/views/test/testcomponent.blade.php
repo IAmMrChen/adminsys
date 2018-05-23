@@ -2,16 +2,16 @@
 
   @section('content')
 	<div id="test_content">
-		<adminsys-select>
+		<!-- <adminsys-select v-model="test">
 			
-		</adminsys-select>
+		</adminsys-select> -->
 	</div>
   @endsection
 
   @section('script')
   <script type="text/javascript">
   	var value = {
-
+      test: '',
   	};
   	require(['jQuery' ,'vue' ,'asminsys_component'], function ($, vue, asminsys_component) {
   		(function ($) {
@@ -20,9 +20,11 @@
   				el: "#test_content",
   				methods: {
   				},
-					created: {
+					created: function () {
 					},
-					mounted:{},
+					mounted: function () {
+            // asminsys_component.init_components();
+          },
 					components:{
 						'adminsys-select': asminsys_component.select,
 					},

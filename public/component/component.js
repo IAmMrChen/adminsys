@@ -38,7 +38,11 @@ define(["jQuery", "text!adminsys_template" ],function ($, adminsys_template) {
 				mounted: {
 
 				}
-			}
+			},
+			init_components: function () {
+				console.log(123);
+	    }
 		}
+		return component;
 	})(jQuery);
 })
