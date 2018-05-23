@@ -2,9 +2,9 @@
 
   @section('content')
 	<div id="test_content">
-		<!-- <adminsys-select v-model="test">
+		<adminsys-select v-model="test">
 			
-		</adminsys-select> -->
+		</adminsys-select>
 	</div>
   @endsection
 
