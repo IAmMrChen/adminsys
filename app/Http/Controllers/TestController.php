@@ -125,4 +125,14 @@ class TestController extends Controller
     public function testVue () {
         return view('test.testvue');
     }
+
+    // test url
+    public function testUrl () {
+        return redirect('/testurltwo');
+        
+    }
+
+    public function testUrlTwo () {
+        return url()->previous();
+    }
 }

@@ -29,6 +29,9 @@ Route::post('/sendemai', 'TestController@sendEmail');
 Route::get('/testarray', 'TestController@testArray');
 // test vue
 Route::get('/testvue', 'TestController@testVue');
+// test url
+Route::get('/testurl', 'TestController@testUrl');
+Route::get('/testurltwo', 'TestController@testUrlTwo');
 
 
 // 新的管理系统项目路由

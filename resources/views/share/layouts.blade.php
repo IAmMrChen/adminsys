@@ -49,7 +49,7 @@
     paths: {
       jQuery: "/assets/js/jquery3.3.1",
       jquery: "/assets/js/jquery3.3.1",
-      bootstrap: "http://www.jq22.com/jquery/bootstrap-3.3.4",
+      bootstrap: "http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js",
       jquerym: "/assets/js/jquery.metisMenu",
       easypiechart: "/assets/js/easypiechart",
       'easypiechart-data': "/assets/js/easypiechart-data",
