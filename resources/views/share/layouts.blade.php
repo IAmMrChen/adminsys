@@ -8,11 +8,13 @@
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- FontAwesome Styles-->
-    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css"> -->
     <!-- Morris Chart Styles-->
     <link href="{{ getenv('ASSETS_JS_ROOT') }}/morris/morris-0.4.3.min.css" rel="stylesheet" />
     <!-- Custom Styles-->
     <link href="{{ getenv('ASSETS_CSS_ROOT') }}/custom-styles.css" rel="stylesheet" />
+    <link href="{{ getenv('ASSETS_CSS_ROOT') }}/style.css" rel="stylesheet" />
+    <link href="{{ getenv('LIBS_ROOT') }}/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
 
 </head>
@@ -67,16 +69,42 @@
       jquerym: ['jQuery'],
       easypiechart: ['jQuery'],
       'easypiechart-data': ['jQuery', 'easypiechart'],
-      'custom-scripts': ['jQuery', 'jquerym', 'easypiechart-data', 'morris'],
+      'custom-scripts': ['jQuery', 'morris'],
       raphael: ['easypiechart', 'jQuery', 'bootstrap'],
       morris: ['jQuery', 'raphael'],
       // ELEMENT: ['vue'],
       asminsys_component: ['vue'],
     }
   });
-  require(['jQuery', 'easypiechart-data', 'custom-scripts', 'easypiechart', 'bootstrap', 'jquerym', 'vue', 'raphael', 'morris'], function ($, easypiechartd, custom, easypiechart, bootstrap, jquerym, vue, raphael, morris) { 
-    (function ($) {
 
+  var value = {
+    change_menu_backgrund: '1',
+  };
+
+  require(['jQuery', 'easypiechart-data', 'custom-scripts', 'easypiechart', 'bootstrap', 'jquerym', 'vue', 'raphael', 'morris', 'asminsys_component'], function ($, easypiechartd, custom, easypiechart, bootstrap, jquerym, vue, raphael, morris, asminsys_component) { 
+    (function ($) {
+      var vm = new vue({
+        data: value,
+        el: "#wrapper",
+        methods: {
+          clikcOne: function () {
+            value.change_menu_backgrund = 1;
+          },
+          clikcTwo: function () {
+            value.change_menu_backgrund = 2;
+          },
+          clikcThree: function () {
+            value.change_menu_backgrund = 3;
+          }
+        },
+        created: function () {
+        },
+        mounted: function () {
+          asminsys_component.init_components();
+        },
+        components: {
+        }
+      });
     })(jQuery);
   })
 </script>
