@@ -9,4 +9,8 @@ class CostDetailInfosController extends Controller
     public function costList () {
     	return view('costdetail.cosedetaillist');
     }
+
+    public function AddCost () {
+    	return view('costdetail.editcost');
+    }
 }
