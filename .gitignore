@@ -13,3 +13,4 @@ yarn-error.log
 public/assets/js/easypiechart-data.js
 resources/views/share/layouts.blade.php
 resources/views/share/layouts.blade.php
+resources/views/share/layouts.blade.php
