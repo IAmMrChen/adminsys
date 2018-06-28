@@ -21,11 +21,11 @@
 		                  <th>消费金额</th>
 		                  <th>消费时间</th>
 		                  <th>备注</th>
-		                  <th>操作</th>
+		                  <th style="text-align: center;">操作</th>
 		                </tr>
 		              </thead>
 		              <tbody>
-		                <tr >
+		                <tr>
 		                  <td>1</td>
 		                  <td>Mark</td>
 		                  <td>Otto</td>
@@ -33,7 +33,10 @@
 		                  <td>@mdo</td>
 		                  <td>@mdo</td>
 		                  <td>@mdo</td>
-		                  <td>@mdo</td>
+		                  <td style="text-align: center;">
+		                  	<a href="#" class="btn btn-info btn-sm"><i class="fa fa-edit">&nbsp;编辑</i></a>
+		                  	<a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o">&nbsp;删除</i></a>
+		                  </td>
 		                </tr>
 		                <tr >
 		                  <td>2</td>
@@ -43,7 +46,10 @@
 		                  <td>@fat</td>
 		                  <td>@fat</td>
 		                  <td>@fat</td>
-		                  <td>@fat</td>
+		                  <td style="text-align: center;">
+		                  	<a href="#" class="btn btn-info btn-sm"><i class="fa fa-edit">&nbsp;编辑</i></a>
+		                  	<a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o">&nbsp;删除</i></a>
+		                  </td>
 		                </tr>
 		                <tr >
 		                  <td>3</td>
@@ -53,7 +59,10 @@
 		                  <td>@twitter</td>
 		                  <td>@twitter</td>
 		                  <td>@twitter</td>
-		                  <td>@twitter</td>
+		                  <td style="text-align: center;">
+		                  	<a href="#" class="btn btn-info btn-sm"><i class="fa fa-edit">&nbsp;编辑</i></a>
+		                  	<a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o">&nbsp;删除</i></a>
+		                  </td>
 		                </tr>
 		                <tr >
 		                  <td>4</td>
@@ -63,7 +72,10 @@
 		                  <td>@jsmith</td>
 		                  <td>@jsmith</td>
 		                  <td>@jsmith</td>
-		                  <td>@jsmith</td>
+		                  <td style="text-align: center;">
+		                  	<a href="#" class="btn btn-info btn-sm"><i class="fa fa-edit">&nbsp;编辑</i></a>
+		                  	<a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash-o">&nbsp;删除</i></a>
+		                  </td>
 		                </tr>
 		              </tbody>
 		            </table>

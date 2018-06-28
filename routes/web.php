@@ -17,4 +17,5 @@ Route::get('/testcomponent', 'index\IndexController@testComponent');
 Route::group([], function () {
 	Route::get('/index', 'index\IndexController@index');
 	Route::get('/cost/costlist', 'CostDetailInfosController@costList');
+	Route::get('/cost/addcost', 'CostDetailInfosController@AddCost');
 });

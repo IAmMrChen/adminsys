@@ -9,7 +9,12 @@
             <a href="ui-elements.html"><i class="fa fa-desktop"></i> UI Elements</a>
         </li>
         <li>
-            <a href="/cost/costlist"><i class="fa fa-money"></i>消费记录列表</a>
+            <a href="/cost/costlist"><i class="fa fa-money"></i>消费记录列表<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                  <a href="/cost/addcost">添加新纪录</a>
+              </li>
+          </ul>
         </li>
         <li>
           <a href="#"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
