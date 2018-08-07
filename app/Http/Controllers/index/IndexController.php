@@ -14,4 +14,12 @@ class IndexController extends Controller
     public function testComponent () {
     	return view('test.testcomponent');
     }
+
+    public function testvue () {
+    	return view('test.testtwo');
+    }
+
+    public function test () {
+    	return 100;
+    }
 }

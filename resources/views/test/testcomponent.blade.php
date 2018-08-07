@@ -29,6 +29,9 @@
 						'adminsys-select': asminsys_component.select,
 					},
   			});
+
+
+        
   		})(jQuery);
   	})
   </script>
